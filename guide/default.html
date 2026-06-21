@@ -1,38 +1,104 @@
-wiki/1
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" vocab="https://schema.org/" typeof="TechArticle" class="article">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="/text-readability/readmode.css" />
+<title>Code Review Guide</title>
+<meta name="author" content="Charles Iliya Krempeaux" />
+</head>
+<body>
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+	<ol>
+		<li><a href="/">Home</a></li>
+		<li><a href="../" aria-current="page">Code Review</a></li>
+		<li><a href="./" aria-current="page">Guide</a></li>
+	</ol>
+</nav>
 
-§ Code Review Guide
-
-⸺ by Charles Iliya Krempeaux
-
-The following is a guide on what to do and what //not// to do when doing a [[code-review]].
-
-§§ Acceptable
-
-These are the things that are acceptable for you to comment on when you are **reviewing** someone else's (another [[computer-programmer]]'s) [[source-code]]:
-
-‣ 1. bugs
-‣‣ //"bugs"// also includes whether the code actually does what was asked for.
-‣ 2. missing error handling
-‣ 3. resource leaks
-‣ 4. security problems
-‣ 5. computational complexity problems
-‣‣ although do remember that there is often a trade-off between time complexity and space complexity, so there may always be some type of problem ⁠⁠— i.e., pick your poison — but you need to make sure that the trade-off made makes sense for the problem at hand
-‣ 6. race conditions
-‣ 7. unnecessary coupling
-
-§§ Not Acceptable
-
-When you are reviewing someone else's code, do not ever give a comment on //style//!
-
-You will just piss them off, make then unhappy, and lower their productivity.
-
-People need to feel that they //own// the code they are working so that they will take responibility for it.
-If you start pushing them to change the style of their code they will no longer feel like they //own// the code.
-They will feel **you** //own// the code.
-And will not take responsibility for it.
-
-But you need them to feel like they //own// the code, so that they will take responsibility for it.
-
-§§ Optional Advise
-
-It is OK to give advice on **future-proofing**, but you MUST make it clear to them that the advise is optional, and they are free to ignore if they want to.
+<main>
+<article>
+	<header>
+		<hgroup>
+			<h1 property="headline">Code Review Guide</h1>
+			<p>
+				how-To and how-not-to do a code review
+			</p>
+		</hgroup>
+		<p>
+			by <a href="https://reiver.link/">Charles Iliya Krempeaux</a>
+		</p>
+	</header>
+	<p>
+		The following is a guide on what to do and what <em>not</em> to do when doing a <a href="../">code-review</a>.
+	</p>
+	<section>
+		<h1>Acceptable</h1>
+		<p>
+			These are the things that are acceptable for you to comment on when you are <strong>reviewing</strong> someone else's (another <strong>computer programmer</strong>'s) <a href="/source-code/">source code</a>:
+		</p>
+		<ol>
+			<li>
+				bugs
+				<ul>
+					<li>
+						<em>"bugs"</em> also includes whether the code actually does what was asked for.
+					</li>
+				</ul>
+			</li>
+			<li>
+				missing error handling
+			</li>
+			<li>
+				resource leaks
+			</li>
+			<li>
+				security problems
+			</li>
+			<li>
+				computational complexity problems
+				<ul>
+					<li>
+						although do remember that there is often a trade-off between time complexity and space complexity, so there may always be some type of problem ⁠⁠— i.e., pick your poison — but you need to make sure that the trade-off made makes sense for the problem at hand
+					</li>
+				</ul>
+			</li>
+			<li>
+				race conditions
+			</li>
+			<li>
+				unnecessary coupling
+			</li>
+		<ol>
+	</section>
+	<section>
+		<h1>Not Acceptable</h1>
+		<p>
+			When you are reviewing someone else's code, do not ever give a comment on <em>style</em>!
+		</p>
+		<p>
+			You will just piss them off, make then unhappy, and lower their productivity.
+		</p>
+		<p>
+			People need to feel that they <em>own</em> the code they are working so that they will take responibility for it.
+			If you start pushing them to change the style of their code they will no longer feel like they <em>own</em> the code.
+			They will feel <strong>you</strong> <em>own</em> the code.
+			And will not take responsibility for it.
+		</p>
+		<p>
+			But you need them to feel like they <em>own</em> the code, so that they will take responsibility for it.
+		</p>
+	</section>
+	<section>
+		<h1>Optional Advise</h1>
+		<p>
+			It is OK to give advice on <strong>future-proofing</strong>, but you MUST make it clear to them that the advise is optional, and they are free to ignore if they want to.
+		</p>
+	</section>
+	<footer>
+		<include src="../author.html" />
+		<include src="../license.html" />
+	</footer>
+</article>
+</main>
+</body>
+</html>
